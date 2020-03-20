@@ -9,73 +9,154 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body style="background-color: #2ac1bc;">
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+<body>
+    <!-- 네비바 -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-4" href="#">
+            <img src="img/logo_full_dark.png" height="90px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mr-auto">
+
+            </ul>
+            <ul class="navbar-nav mr-5 my-lg-0">
+                <li class="nav-item active mr-2">
+                    <a class="nav-link" href="#"><img src="img/github.png" height="40px" alt=""></a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#"><img src="img/insta.png" height="40px" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/facebook.jpg" height="40px" alt=""></a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
     <div id="fullpage">
-        <div class="section active bamin_background " id="section1">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
+        <!-- 정답을 맞추면 모달이 뜨는건 어떨까? -->
+        <div class="section active bamin_background" id="section1">
+            <div class="container">
+                <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
+                    <input type="radio" name="radio" id="x"> HTML은 마크다운 기반이다. <br>
+                    <input type="radio" name="radio" id="x"> HTML은 프로그래밍 언어다 <br>
+                    <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
+                </form>
+            </div>
         </div>
         <div class="section bamin_background" id="section2">
-            <img src="img/Sir_Tim_Berners-Lee.jpg" alt="">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
-
+            <div class="container">
+                <img src="img/Sir_Tim_Berners-Lee.jpg" alt="">
+                <h2>위 사람은 Web과 HTML을 최초로 개발한 사람이다. 이 사람의 이름은?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> 앨런 튜링 <br>
+                    <input type="radio" name="radio" id="x"> 빌게이츠 <br>
+                    <input type="radio" name="radio" id="x"> 앨런 머스크 <br>
+                    <input type="radio" name="radio" id="x"> 마크 주커버그 <br>
+                    <input type="radio" name="radio" id="o"> 팀 버너스리 <br>
+                </form>
+            </div>
         </div>
         <div class="section bamin_background" id="section3">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
+            <div class="container">
+                <h2>Table 태그에 구성요소가 아닌 것은?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> thead <br>
+                    <input type="radio" name="radio" id="x"> td <br>
+                    <input type="radio" name="radio" id="x"> tr <br>
+                    <input type="radio" name="radio" id="x"> th <br>
+                    <input type="radio" name="radio" id="o"> to <br>
+                </form>
+            </div>
         </div>
         <div class="section bamin_background" id="section4">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
+            <div class="container">
+                <h2>최초의 웹 사이트의 주소는?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> yahoo.jp <br>
+                    <input type="radio" name="radio" id="x"> naver.com <br>
+                    <input type="radio" name="radio" id="o"> info.cern.ch <br>
+                    <input type="radio" name="radio" id="x"> kakao.com <br>
+                    <input type="radio" name="radio" id="x"> youtube.com <br>
+                </form>
+            </div>
         </div>
         <div class="section bamin_background" id="section5">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
+            <div class="container">
+                <h2>HTML은 언제 탄생했나요?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> 1970년도 초 <br>
+                    <input type="radio" name="radio" id="x"> 1970년도 말<br>
+                    <input type="radio" name="radio" id="x"> 1980년도 초 <br>
+                    <input type="radio" name="radio" id="o"> 1990년도 초 <br>
+                    <input type="radio" name="radio" id="x"> 2000년도 초 <br>
+                </form>
+            </div>
         </div>
         <div class="section bamin_background" id="scetion6">
-            <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
-            <form action="#">
-                <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-                <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
-            </form>
+            <div class="container">
+                <h2>문자를 굵게 만들때 사용하는 태그는?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="o"> b <br>
+                    <input type="radio" name="radio" id="x"> a <br>
+                    <input type="radio" name="radio" id="x"> title <br>
+                    <input type="radio" name="radio" id="x"> ol <br>
+                    <input type="radio" name="radio" id="x"> ul <br>
+                </form>
+            </div>
+        </div>
+        <div class="section bamin_background" id="scetion6">
+            <div class="container">
+                <h2>문단을 작성할때 사용하는 태그는?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> title <br>
+                    <input type="radio" name="radio" id="x"> a <br>
+                    <input type="radio" name="radio" id="x"> b <br>
+                    <input type="radio" name="radio" id="x"> nav <br>
+                    <input type="radio" name="radio" id="o"> p <br>
+                </form>
+            </div>
+        </div>
+
+        <div class="section bamin_background" id="scetion6">
+            <div class="container">
+                <h2>img태그의 alt의 역활은?</h2>
+                <form action="#">
+                    <input type="radio" name="radio" id="x"> 이미지의 색상을 조절할 수 있다. <br>
+                    <input type="radio" name="radio" id="x"> 이미지의 크기를 조절할 수 있다. <br>
+                    <input type="radio" name="radio" id="x"> 이미지의 대한 묘사를 표현한다. <br>
+                    <input type="radio" name="radio" id="x"> 이미지를 모양을 반전시킨다. <br>
+                    <input type="radio" name="radio" id="x"> 이미지의 테두리를 모양을 변경한다. <br>
+                </form>
+            </div>
+        </div>
+        <div class="section bamin_background" id="scetion6">
+            <div class="container">
+                <h2>축하합니다! 모든 문제를 맞췄습니다!</h2>
+                <h4>추첨을 위해 이름을 입력해주세요!</h4>
+                <div class="row">
+                    <div class="form-group col-md text-right">
+                        <form class="gform" method="POST" data-email="examples@gmail.com"
+                            action=" https://script.google.com/macros/s/AKfycbw1uj5P5X4JqLtk884kgC6MyOenCbq5HJJ1tdDv/exec">
+                            <textarea class="form-control" id="" rows="3" name="value"></textarea>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -92,13 +173,14 @@
     <script type="text/javascript" src="examples.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage("#fullpage", {
-            anchors: ["1", "2", "3", "4", "5"],
+            anchors: ["1", "2", "3", "4", "5", "6", "7", "8"],
             menu: "#menu",
             lazyLoad: true,
             navigation: true
         });
     </script>
     <script src="js/custom.js"></script>
+    <!-- -->
 </body>
 
 </html>

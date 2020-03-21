@@ -23,6 +23,6 @@ $("#nextButton").click(function(){
         location.href = "/index.html#2";
     }
     else {
-        location.href = "/index.html#" + (Number(pageNumber) + 1);
+        location.href = "index.html#" + (Number(pageNumber) + 1);
     }
 });

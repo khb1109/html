@@ -15,7 +15,7 @@
 <body>
     <!-- 네비바 -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand ml-4" href="#">
+        <a class="navbar-brand ml-4" href="/index.html">
             <img src="img/logo_full_dark.png" height="90px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,10 +49,10 @@
             <div class="container">
                 <h2>다음 중 HTML의 대한 설명이 아닌것은?</h2>
                 <form action="#">
-                    <input type="radio" name="radio" id="o"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
+                    <input type="radio" name="radio" id="o"> HTML은 Hyper Text Markup Language다 <br>
                     <input type="radio" name="radio" id="x"> HTML은 마크다운 기반이다. <br>
                     <input type="radio" name="radio" id="x"> HTML은 프로그래밍 언어다 <br>
-                    <input type="radio" name="radio" id="x"> HTML은 하이퍼 텍스트 마크업 랭귀지다 <br>
+                    <input type="radio" name="radio" id="x"> HTML은 유료 라이센스아니다 <br>
                 </form>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <form action="#">
                     <input type="radio" name="radio" id="x"> 이미지의 색상을 조절할 수 있다. <br>
                     <input type="radio" name="radio" id="x"> 이미지의 크기를 조절할 수 있다. <br>
-                    <input type="radio" name="radio" id="x"> 이미지의 대한 묘사를 표현한다. <br>
+                    <input type="radio" name="radio" id="o"> 이미지의 대한 묘사를 표현한다. <br>
                     <input type="radio" name="radio" id="x"> 이미지를 모양을 반전시킨다. <br>
                     <input type="radio" name="radio" id="x"> 이미지의 테두리를 모양을 변경한다. <br>
                 </form>
@@ -176,8 +176,9 @@
             anchors: ["1", "2", "3", "4", "5", "6", "7", "8"],
             menu: "#menu",
             lazyLoad: true,
-            navigation: true
-        });
+            // navigation: true,
+            keyboardScrolling: false  });
+            fullpage_api.setAllowScrolling(false);
     </script>
     <script src="js/custom.js"></script>
     <!-- -->
